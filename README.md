@@ -18,7 +18,7 @@ The most common option for `cp` is `-r`, which will recursively copy the content
 
 The move command is similar to `cp` except that it’s strictly used to “move” files or directories from source to destination. A major advantage of using mv is that you don’t need to use a `-r` option to recursively copy the contents of a directory.
 
-## Permissions, Wildcards, and Filters
+## Permissions
 ### chmod - Change permissions
 `chmod [permissions] [path]`
 
@@ -34,6 +34,21 @@ The owner of a file or directory may change the permissions of that file or dire
 | 1 | 0 | 1 | 5             |
 | 1 | 1 | 0 | 6             |
 | 1 | 1 | 1 | 7             |
+
+## Filters
+Filters are a way to take data stored in a human readable text file or output from a program/other command, and manipulate it. There’s alarge number of filters in Linux that are usuallyused in tandem.
+
+### head – Display the first few lines of a file
+`head [-number of lines] [file]`
+
+The head command prints some number of lines froma file to the console. By default, this number is 10.
+
+### tail – Display the last few lines of a file
+`tail [-number of lines] [file]`
+
+The tail command operates exactly the same way as head, except that it starts from the end of the file and works its way upwards.
+
+One extremely useful option in the tail command is `-f`. The `-f` option allows you to “follow” the file. This comes in handy if a program produces an output file that grows over time, such as a packet capture or an analysis program that generates solutions to a problem every so often.
 
 # Concepts
 ## File Permissions
