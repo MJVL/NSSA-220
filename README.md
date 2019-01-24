@@ -88,6 +88,14 @@ Use the `-k` option to sort on a certain column.
 
 The `uniq` command will remove duplicate lines from a file, but only if the duplicates are right next to each other in the file.
 
+## Searching
+Linux has a very powerful search command known as `grep` that lets us search the contents of one or more files for certain data contained there in.
+
+### egrep - extended regex version of grep
+`egrep [command line options] <pattern> [path]`
+
+A couple other useful options are `-n` (show the line number along with the string matchedline) and `-c` (display how many lines in the file that the string match appears).
+
 # Concepts
 ## File Permissions
 Recall that Linux file permissions consist of 9 characters, which are broken into three distinct sets. The characters within each set of file permissions in Linux indicate whatmay be done with a file. 
