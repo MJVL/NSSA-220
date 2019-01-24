@@ -36,7 +36,7 @@ The owner of a file or directory may change the permissions of that file or dire
 | 1 | 1 | 1 | 7             |
 
 ## Filters
-Filters are a way to take data stored in a human readable text file or output from a program/other command, and manipulate it. There’s alarge number of filters in Linux that are usuallyused in tandem.
+Filters are a way to take data stored in a human readable text file or output from a program/other command, and manipulate it. There’s a large number of filters in Linux that are usually used in tandem.
 
 ### head – display the first few lines of a file
 `head [-number of lines] [file]`
