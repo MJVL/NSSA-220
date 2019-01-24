@@ -4,17 +4,17 @@ Collection of useful commands and concepts for NSSA 220 - Task Automation Using 
 # Commands
 ## The Basics
 ### (Man)ual Pages
-`man <command of interest>. `
+`man <command of interest> `
 
 The manual (man) pages are your friend. Use them early and often!
 
 ### cp (Copy) – how to copy files/directories
-`cp [options] <source> <destination`
+`cp [options] <source> <destination>`
 
 The most common option for `cp` is `-r`, which will recursively copy the contents of a directory.
 
 ### mv (Move) – move/rename files/directories
-`mv [options] <source> <destination`
+`mv [options] <source> <destination>`
 
 The move command is similar to `cp` except that it’s strictly used to “move” files or directories from source to destination. A major advantage of using mv is that you don’t need to use a `-r` option to recursively copy the contents of a directory.
 
