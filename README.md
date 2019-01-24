@@ -8,18 +8,18 @@ Collection of useful commands and concepts for NSSA 220 - Task Automation Using 
 
 The manual (man) pages are your friend. Use them early and often!
 
-### cp (Copy) – How to copy files/directories
+### cp (Copy) – how to copy files/directories
 `cp [options] <source> <destination`
 
 The most common option for `cp` is `-r`, which will recursively copy the contents of a directory.
 
-### mv (Move) – Move/rename files/directories
+### mv (Move) – move/rename files/directories
 `mv [options] <source> <destination`
 
 The move command is similar to `cp` except that it’s strictly used to “move” files or directories from source to destination. A major advantage of using mv is that you don’t need to use a `-r` option to recursively copy the contents of a directory.
 
 ## Permissions
-### chmod - Change permissions
+### chmod - change permissions
 `chmod [permissions] [path]`
 
 The owner of a file or directory may change the permissions of that file or directory at any time. In terms of security, it’s best to give as few permissions as is reasonably possible, while still allowing the users of the file system to accomplish their work.
@@ -38,29 +38,55 @@ The owner of a file or directory may change the permissions of that file or dire
 ## Filters
 Filters are a way to take data stored in a human readable text file or output from a program/other command, and manipulate it. There’s alarge number of filters in Linux that are usuallyused in tandem.
 
-### head – Display the first few lines of a file
+### head – display the first few lines of a file
 `head [-number of lines] [file]`
 
 The `head` command prints some number of lines from a file to the console. By default, this number is 10.
 
-### tail – Display the last few lines of a file
+### tail – display the last few lines of a file
 `tail [-number of lines] [file]`
 
 The `tail` command operates exactly the same way as `head`, except that it starts from the end of the file and works its way upwards.
 
 One extremely useful option in the `tail` command is `-f`. The `-f` option allows you to “follow” the file. This comes in handy if a program produces an output file that grows over time, such as a packet capture or an analysis program that generates solutions to a problem every so often.
 
-### nl – Number lines in a files
+### nl – number lines in a files
 `nl [-options] [file]`
 
  The `nl` command provides line numbers to every line in a file without modifying the contents of a file.
  
-### cut – Remove fields from a well formatted file
+### cut – remove fields from a well formatted file
 `cut [-options] [file]`
 
-The cut command separates well formatted data into fields and returns only the fields of interest.
+The `cut` command separates well formatted data into fields and returns only the fields of interest.
 
-The `-f` option allows us to specify which fields are of interest to us (seperated by commas). So that cut knows how the data is formatted, specify the delimiter in quotes in conjunction with `-d`.
+The `-f` option allows us to specify which fields are of interest to us (seperated by commas). So that `cut` knows how the data is formatted, specify the delimiter in quotes in conjunction with `-d`.
+
+### sed (Stream Editor) – search and replace on data
+`sed <expression> [file]`
+
+The stream editor, `sed`, is an extremely expressive and powerful program. The format may appear simple, but this program offers seemingly unlimited possibilities. 
+
+The expression argument is required and has the following format: `s/search/replace/g`.
+
+### awk - pattern scanning and processing language
+`awk <search pattern> [file]`
+
+The `awk` program is a much more powerful version of `cut` that has a huge number of options and capabilities.
+
+Fields are indicated by `$`, and actions to perform are surrounded in `{}`.
+
+### sort – arrange lines of a file alphabetically 
+`sort [-options] [file]`
+
+Often times, you’ll want to sort data by things like a timestamp, item number, or last name. This can be easily accomplished using the `sort` command.
+
+Use the `-k` option to sort on a certain column.
+
+### uniq – remove duplicate lines
+`uniq [options] [file]`
+
+The `uniq` command will remove duplicate lines from a file, but only if the duplicates are right next to each other in the file.
 
 # Concepts
 ## File Permissions
