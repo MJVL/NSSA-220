@@ -133,3 +133,9 @@ Here is a fairly comprehensive set of regex that you should be aware of (yes, th
 * **|** (pipe) – logical OR operator
 * **^** -matches the beginning of a line
 * **$** -matches the end of a line
+
+## Redirection
+All programs that run on the command line have three types of data streams associated with them:
+* **STDIN (0)** – Standard input fed into the program (from the command line or other programs)
+* **STDOUT (1)** – Standard output printed by the program (to the terminal by default)
+* **STDERR (2)** – Standard error for program errors (to the terminal by default)
