@@ -24,6 +24,17 @@ The move command is similar to `cp` except that it’s strictly used to “move�
 
 The owner of a file or directory may change the permissions of that file or directory at any time. In terms of security, it’s best to give as few permissions as is reasonably possible, while still allowing the users of the file system to accomplish their work.
 
+| r | w | x | Decimal Value |
+|---|---|---|:-------------:|
+| 0 | 0 | 0 | 0             |
+| 0 | 0 | 1 | 1             |
+| 0 | 1 | 0 | 2             |
+| 0 | 1 | 1 | 3             |
+| 1 | 0 | 0 | 4             |
+| 1 | 0 | 1 | 5             |
+| 1 | 1 | 0 | 6             |
+| 1 | 1 | 1 | 7             |
+
 # Concepts
 ## File Permissions
 Recall that Linux file permissions consist of 9 characters, which are broken into three distinct sets. The characters within each set of file permissions in Linux indicate whatmay be done with a file. 
