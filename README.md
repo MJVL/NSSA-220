@@ -19,6 +19,10 @@ The most common option for `cp` is `-r`, which will recursively copy the content
 The move command is similar to `cp` except that it’s strictly used to “move” files or directories from source to destination. A major advantage of using mv is that you don’t need to use a `-r` option to recursively copy the contents of a directory.
 
 ## Permissions, Wildcards, and Filters
+### chmod - Change permissions
+`chmod [permissions] [path]`
+
+The owner of a file or directory may change the permissions of that file or directory at any time. In terms of security, it’s best to give as few permissions as is reasonably possible, while still allowing the users of the file system to accomplish their work.
 
 # Concepts
 ## File Permissions
