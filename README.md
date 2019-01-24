@@ -6,7 +6,7 @@ Collection of useful commands and concepts for NSSA 220 - Task Automation Using 
 ### (Man)ual Pages
 `man <command of interest>. `
 
-The manual (man)pages are your friend. Use them early and often!
+The manual (man) pages are your friend. Use them early and often!
 
 ### cp (Copy) – How to copy files/directories
 `cp [options] <source> <destination`
@@ -41,14 +41,26 @@ Filters are a way to take data stored in a human readable text file or output fr
 ### head – Display the first few lines of a file
 `head [-number of lines] [file]`
 
-The head command prints some number of lines froma file to the console. By default, this number is 10.
+The `head` command prints some number of lines from a file to the console. By default, this number is 10.
 
 ### tail – Display the last few lines of a file
 `tail [-number of lines] [file]`
 
-The tail command operates exactly the same way as head, except that it starts from the end of the file and works its way upwards.
+The `tail` command operates exactly the same way as `head`, except that it starts from the end of the file and works its way upwards.
 
-One extremely useful option in the tail command is `-f`. The `-f` option allows you to “follow” the file. This comes in handy if a program produces an output file that grows over time, such as a packet capture or an analysis program that generates solutions to a problem every so often.
+One extremely useful option in the `tail` command is `-f`. The `-f` option allows you to “follow” the file. This comes in handy if a program produces an output file that grows over time, such as a packet capture or an analysis program that generates solutions to a problem every so often.
+
+### nl – Number lines in a files
+`nl [-options] [file]`
+
+ The `nl` command provides line numbers to every line in a file without modifying the contents of a file.
+ 
+### cut – Remove fields from a well formatted file
+`cut [-options] [file]`
+
+The cut command separates well formatted data into fields and returns only the fields of interest.
+
+The `-f` option allows us to specify which fields are of interest to us (seperated by commas). So that cut knows how the data is formatted, specify the delimiter in quotes in conjunction with `-d`.
 
 # Concepts
 ## File Permissions
