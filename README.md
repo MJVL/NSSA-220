@@ -116,3 +116,20 @@ Here is a set of wild cards that we’ll begin with:
 * **&ast;** - represents zero or more characters.
 * **?** – represents to a single character.
 * **[]** – represents a range of character.
+
+## Regex
+A regular expression, regex or regexp is a sequence of characters that define a search pattern. Usually this pattern is used by string searching algorithms for "find" or "find and replace" operations on strings, or for input validation.
+
+Here is a fairly comprehensive set of regex that you should be aware of (yes, there are others):
+* **.** (dot) – a single character
+* **?** – the preceding character matches *only* 0 or 1 times
+* **&ast;** - the preceding character matches 0 or more times
+* **+** - the preceding character matches 1 or more times
+* **{n}** – the preceding character matches exactly n times
+* **{n,m}** – the preceding character matches at least ntimes and no more than mtimes
+* **[agd]** – the character is one of the characters within the square brackets
+* **[^agd]** – the character is not one of the characters within the square brackets
+* **[c-f]** – the dash defines a range of characters
+* **|** (pipe) – logical OR operator
+* **^** -matches the beginning of a line
+* **$** -matches the end of a line
