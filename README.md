@@ -109,6 +109,7 @@ Each of the three sets of characters (rwx) indicate who may perform any of the a
 * **owner** – the user that “owns” the file. Often, this is who created the file, but not always. 
 * **group** – a defined collection of at least one user. By default, the owner and group are the same. An example of a group could be something called “users” that consistsof all non-root users ora group of similar users, such as users from the same department or team within an organization.
 * **all others** -any user that is not the owner or not part of a group.
+
 ## Wildcards
 Wildcards allow us to generate a pattern that can referenceseveral files or directories at once. 
 
