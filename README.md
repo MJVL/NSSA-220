@@ -131,7 +131,7 @@ Here is a fairly comprehensive set of regex that you should be aware of (yes, th
 * **[agd]** – the character is one of the characters within the square brackets
 * **[^agd]** – the character is not one of the characters within the square brackets
 * **[c-f]** – the dash defines a range of characters
-* **|** (pipe) – logical OR operator
+* **\|** (pipe) – logical OR operator
 * **^** -matches the beginning of a line
 * **$** -matches the end of a line
 
